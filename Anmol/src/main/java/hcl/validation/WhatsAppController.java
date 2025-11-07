@@ -16,8 +16,8 @@ public class WhatsAppController {
         try {
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("https://graph.facebook.com/v24.0/850736108124567/messages"))
-                    .header("Authorization", "Bearer EAAVITKuFU8kBP5iETZABD1OsFWuUPbeZAZAGSFDDlgtCGW2CCNoPnuVA2tB2KwD1omDTRxSVdtpBwGoA3YEnxd2hCBmmu7YkAnHBaWmZBhGoEkeXoWQust7alGtPEREg10ZBa2qhCL06XItZCr3dvuGUudvKLiZAzEMCiZCRNXODpQDgepejwFjj7Q9kUzSLQCv7nGaZBDiT7lIDrXCZB1TA1Gfp3c6UsbfycKQTQNEDULusYhFtDavhwTXDQbZAAWZA43Ufu1Xr3XoIt8IvN7wrnyJXDv4K")
+                    .uri(URI.create("https://graph.facebook.com/v24.0/your_watsapp_id/messages"))
+                    .header("Authorization", "Bearer {Your access tocken}")
                     .header("Content-Type", "application/json")
                     .POST(HttpRequest.BodyPublishers.ofString("""
                 {
